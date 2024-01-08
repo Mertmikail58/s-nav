@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(4,200px);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    min-height: 100vh;
+}
+header,main,footer,section,nav,.kutu6{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+main{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+footer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+section{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+nav{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+.kutu6{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 15px;
+    flex-direction: column;
+}
+header > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+}
+main > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+}
+footer > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+    
+}
+section > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+}
+nav > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+}
+.kutu6 > div{
+    background-color: black;
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+}
+header > :nth-child(1){
+    align-self: flex-start;
+}
+header > :nth-child(2){
+margin-left: 110px;
+
+}
+header > :nth-child(3){
+    align-self: flex-end;
+}
+header > :nth-child(4){
+    margin-left: 110px;
+    align-self: flex-end;
+}
+main > :nth-child(1){
+    align-self: flex-start;
+}
+main > :nth-child(2){
+    margin-left: 110px;
+}
+main > :nth-child(3){
+    align-self: flex-end;
+}
+main > :nth-child(4){
+    margin-left: 110px;
+    align-self: flex-end;
+    margin-top: 110px;
+}
+main > :nth-child(5){
+    margin-left: 80px;
+    margin-top: -110px;
+}
+footer > :nth-child(1){
+    align-self: center;
+    margin-left: 80px;
+}
+section > :nth-child(1){
+    align-self: flex-end;
+}
+section > :nth-child(2){
+    margin-left: 115px;
+}
+nav > :nth-child(1){
+    align-self: center;
+    margin-left: 80px;
+}
+nav > :nth-child(2){
+    align-self: last baseline;
+    margin-top: 150px;
+   margin-left: -115px;
+   
+}
+
+nav > :nth-child(3){
+    margin-top: -190px;
+   margin-left: 150px;
+}
+.kutu6 > :nth-child(2){
+    margin-top: 30px;
+}
+.kutu6 > :nth-child(3){
+   margin-top: 40px;
+}
+.kutu6 > :nth-child(4){
+    margin-left: 110px;
+}
+.kutu6 > :nth-child(5){
+    margin-left:110px ;
+    margin-top: 30px;
+}
+.kutu6 > :nth-child(6){
+    margin-left:110px ;
+    margin-top: 40px;
+}
